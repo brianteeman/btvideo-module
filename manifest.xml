@@ -1,21 +1,20 @@
 
 <updates>
 	<update>
-		<name>Fields - BT-Video</name>
-		<description>The video displays just like a regular embed but approximately 224× faster.</description>
-		<element>btvideo</element>
-		<type>plugin</type>
-		<folder>fields</folder>
+		<name>BT Video Module Update Site</name>
+		<description>Joomla module - video displays just like a regular embed but approximately 224× faster.</description>
+		<element>mod_btvideo</element>
+		<type>module</type>
 		<client>site</client>
 		<version>1.1.0</version>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/brianteeman/btvideo/archive/1.1.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/brianteeman/btvideo-module/archive/1.1.0.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<infourl title="BT-Video Plugin Page on GitHub">
-			https://github.com/brianteeman/btvideo/blob/master/README.md
+		<infourl title="BT-Video Module Page on GitHub">
+			https://github.com/brianteeman/btvideo-module/blob/master/README.md
 		</infourl>
 		<maintainer>Brian Teeman</maintainer>
 		<maintainerurl>https://brian.teeman.net</maintainerurl>

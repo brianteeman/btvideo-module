@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.9.0" client="site" method="upgrade">
+	<name>mod_btvideo</name>
+	<author>Brian Teeman</author>
+	<creationDate>October 2020</creationDate>
+	<copyright>Copyright (C) 2020</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>brian@teeman.net</authorEmail>
+	<authorUrl>https://brian.teeman.net</authorUrl>
+	<version>1.1.0</version>
+	<description>MOD_BTVIDEO_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_btvideo">mod_btvideo.php</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<media destination="mod_btvideo" folder="media" >
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_btvideo.ini</language>
+		<language tag="en-GB">en-GB.mod_btvideo.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field
+                    name="videoid"
+                    type="url"
+                    label="MOD_BTVIDEO_LABEL"
+                    required="true"
+                    size="30"
+                    filter="url"
+                    validate="url"
+                />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="BT Video Module Update Site">https://raw.githubusercontent.com/brianteeman/btvideo-module/master/manifest.xml</server>
+	</updateservers>
+
+</extension>
