@@ -6,7 +6,7 @@
  *   https://autoplay-youtube-player.glitch.me/
  *
  * Once built it, I also found these:
- *   https://github.com/ampproject/amphtml/blob/master/extensions/amp-youtube (ðŸ‘ðŸ‘)
+ *   https://github.com/ampproject/amphtml/blob/master/extensions/amp-youtube (👍👍)
  *   https://github.com/Daugilas/lazyYT
  *   https://github.com/vb/lazyframe
  */
@@ -20,8 +20,6 @@ class LiteYTEmbed extends HTMLElement {
 
         /**
          * Lo, the youtube placeholder image!  (aka the thumbnail, poster image, etc)
-         * There is much internet debate on the reliability of thumbnail URLs. Weak consensus is that you
-         * cannot rely on anything and have to use the YouTube Data API.
          *
          * See https://github.com/paulirish/lite-youtube-embed/blob/master/youtube-thumbnail-urls.md
          *
@@ -32,10 +30,7 @@ class LiteYTEmbed extends HTMLElement {
         this.posterUrl = `https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg`;
         // Warm the connection for the poster image
         LiteYTEmbed.addPrefetch('preload', this.posterUrl, 'image');
-        // TODO: support dynamically setting the attribute via attributeChangedCallback
-    }
 
-    connectedCallback() {
         this.style.backgroundImage = `url("${this.posterUrl}")`;
 
         // Set up play button, and its visually hidden label
